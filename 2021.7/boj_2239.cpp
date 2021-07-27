@@ -10,7 +10,7 @@ bool stop = false;
 void backTracking(int n) {
 	if (n == v.size()) { // 종료 조건
 		stop = true;
-		return; 
+		return;
 	}
 	// 현재 칸 
 	pii now = v[n];
