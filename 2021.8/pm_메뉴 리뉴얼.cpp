@@ -20,7 +20,7 @@ void permutation(vector<string>& temp, string str, int cnt, int start, int end) 
     }
 }
 
-vector <string> make(string str) { // ¸ğµç °æ¿ì »ı¼º
+vector <string> make(string str) { // ëª¨ë“  ê²½ìš° ìƒì„±
     vector <string> ret;
     int size = str.size();
     for (int i = 1; i <= size; i++) {
@@ -30,7 +30,7 @@ vector <string> make(string str) { // ¸ğµç °æ¿ì »ı¼º
     return ret;
 }
 
-string sortStr(string str) { // ¹®ÀÚ¿­ Á¤·Ä
+string sortStr(string str) { // ë¬¸ìì—´ ì •ë ¬
     vector<char>temp;
     for (int i = 0; i < str.size(); i++) temp.push_back(str[i]);
     sort(temp.begin(), temp.end());
@@ -39,17 +39,15 @@ string sortStr(string str) { // ¹®ÀÚ¿­ Á¤·Ä
     return ret;
 }
 
-int main() {
-    vector<string> orders = { "XYZ", "XWY", "WXA" };
-    vector<int> course = { 2,3,4 };
+vector<string> solution(vector<string> orders, vector<int> course) {
     vector<string> answer;
 
-    // map 2°³ »ı¼º - 1) ÇØ´ç ¹®ÀÚ¿­ÀÌ ³ª¿Ô´ÂÁö ¾Æ´ÑÁö È®ÀÎÇÒ ¹è¿­, 2) ÃâÇö °³¼ö ÀúÀåÇÒ map
-    // 1. ¹®ÀÚ¿­ÀÌ µé¾î¿À¸é ¸ğµç °æ¿ìÀÇ ¼ö¸¦ ¸¸µé±â (¹Ì¸® ¹®ÀÚ¿­ ³»ÀÇ °¢ ¹®ÀÚ »çÀü¼øÀ¸·Î Á¤·Ä½ÃÄÑ³õ±â)
-    // 2. °¢°¢ÀÇ ¹®ÀÚ¿­µéÀ» 1¹ø mapÀ» ÅëÇØ ÀÌ¹Ì ³ª¿Ô´ÂÁö È®ÀÎ
-    //    1) ÀÌ¹Ì ³ª¿Â ¹®ÀÚ¿­ÀÌ¶ó¸é 2¹ø map¿¡¼­ ÃâÇö °³¼ö ++
-    //    2) Ã³À½ ³ª¿Â ¹®ÀÚ¿­ÀÌ¶ó¸é 2¹ø map¿¡ »õ·Î push
-    // 3. 2¹ø map¿¡¼­ ÃÖ´ë°ªµé¸¸ »Ì¾Æ¼­ answer ¹è¿­¿¡ ³Ö¾î³õ°í sort ÈÄ Ãâ·Â
+    // map 2ê°œ ìƒì„± - 1) í•´ë‹¹ ë¬¸ìì—´ì´ ë‚˜ì™”ëŠ”ì§€ ì•„ë‹Œì§€ í™•ì¸í•  ë°°ì—´, 2) ì¶œí˜„ ê°œìˆ˜ ì €ì¥í•  map
+    // 1. ë¬¸ìì—´ì´ ë“¤ì–´ì˜¤ë©´ ëª¨ë“  ê²½ìš°ì˜ ìˆ˜ë¥¼ ë§Œë“¤ê¸° (ë¯¸ë¦¬ ë¬¸ìì—´ ë‚´ì˜ ê° ë¬¸ì ì‚¬ì „ìˆœìœ¼ë¡œ ì •ë ¬ì‹œì¼œë†“ê¸°)
+    // 2. ê°ê°ì˜ ë¬¸ìì—´ë“¤ì„ 1ë²ˆ mapì„ í†µí•´ ì´ë¯¸ ë‚˜ì™”ëŠ”ì§€ í™•ì¸
+    //    1) ì´ë¯¸ ë‚˜ì˜¨ ë¬¸ìì—´ì´ë¼ë©´ 2ë²ˆ mapì—ì„œ ì¶œí˜„ ê°œìˆ˜ ++
+    //    2) ì²˜ìŒ ë‚˜ì˜¨ ë¬¸ìì—´ì´ë¼ë©´ 2ë²ˆ mapì— ìƒˆë¡œ push
+    // 3. 2ë²ˆ mapì—ì„œ ìµœëŒ€ê°’ë“¤ë§Œ ë½‘ì•„ì„œ answer ë°°ì—´ì— ë„£ì–´ë†“ê³  sort í›„ ì¶œë ¥
 
     map<string, int> m1, m2[11];
 
@@ -59,7 +57,7 @@ int main() {
         vector<string> allStr = make(str);
         for (int k = 0; k < allStr.size(); k++) {
             auto iter = m1.find(allStr[k]);
-            if (iter == m1.end()) { // Ã³À½ ³ª¿Â ¹®ÀÚ¿­ÀÌ¶ó¸é
+            if (iter == m1.end()) { // ì²˜ìŒ ë‚˜ì˜¨ ë¬¸ìì—´ì´ë¼ë©´
                 m1.insert(psi(allStr[k], 1));
                 m2[allStr[k].size()].insert(psi(allStr[k], 1));
             }
@@ -70,7 +68,7 @@ int main() {
         }
     }
 
-    // ÃÖ´ë°ªµé »Ì¾Æ¼­ answer ¹è¿­¿¡ ³Ö±â
+    // ìµœëŒ€ê°’ë“¤ ë½‘ì•„ì„œ answer ë°°ì—´ì— ë„£ê¸°
     for (int i = 0; i < course.size(); i++) {
         int s = course[i];
         if (!m2[s].empty()) {
@@ -85,6 +83,6 @@ int main() {
         }
     }
     sort(answer.begin(), answer.end());
-
-    for (int k = 0; k < answer.size(); k++) cout << answer[k] << "\n";
+    
+    return answer;
 }
