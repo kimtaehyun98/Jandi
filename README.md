@@ -16,7 +16,7 @@
 
 ### GitHub
 
-![image](https://user-images.githubusercontent.com/65909160/144749373-5ba9e516-7823-4ef4-8879-2c771d0bf297.png)
+![image](https://user-images.githubusercontent.com/65909160/145701903-09256d5e-5489-4b85-b0bc-909cde8e6235.png)
 
 ### Solved.AC
 - Solved.AC 잔디 기능에 오류가 있음 (강제 갱신 등의 이유로 결과가 제대로 반영되지 않음)
@@ -25,7 +25,7 @@
 - Solved.ac 잔디를 이어가기 위해 Programmers 등 기타 Online Judge 문제를 풀었을 시에는 BOJ 문제중 쉬운 문제를 풀어서 잔디만 채울 예정
 - 위의 이유로 인해 하루에 두 개의 파일이 올라갈 수 있음
 
-![image](https://user-images.githubusercontent.com/65909160/144749397-581882b6-58bf-4eb4-8505-6a7c25e949ce.png)
+![image](https://user-images.githubusercontent.com/65909160/145701892-49448ee4-c7f2-4798-8a79-c4d64e32f915.png)
 
 - 7/28 Solved.AC 오류 (채점번호 : 31504838)
 - 7/29 Solved.AC 오류 (채점번호 : 31588234)
