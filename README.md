@@ -16,7 +16,7 @@
 
 ### GitHub
 
-![image](https://user-images.githubusercontent.com/65909160/147902397-9ed1d4ad-e687-4bde-a13a-24a1092c28dc.png)
+![image](https://user-images.githubusercontent.com/65909160/150666904-213325e4-c327-479e-89da-bc74bd9eaa19.png)
 
 
 ### Solved.AC
@@ -25,8 +25,10 @@
 - BOJ 말고 Programmers나 SW Expert 문제를 풀었을 시에는 잔디가 심어지지 않기 때문에 해결 문제 링크 남김
 - Solved.ac 잔디를 이어가기 위해 Programmers 등 기타 Online Judge 문제를 풀었을 시에는 BOJ 문제중 쉬운 문제를 풀어서 잔디만 채울 예정
 - 위의 이유로 인해 하루에 두 개의 파일이 올라갈 수 있음
+- 1/17 ~ 2/25 "삼성 DX 부문 22년 동계 대학생 S/W 알고리즘 역량강화 과정" 수강으로 인해 BOJ 문제는 쉬운 문제만 풀어서 잔디 채움 
+- 위에 언급한 기간에는 SW Expert 문제를 풀었으나 코드는 따로 올리지 않음 
 
-![image](https://user-images.githubusercontent.com/65909160/147902408-2244de20-0986-4d3c-9a34-e64f8bac473b.png)
+![image](https://user-images.githubusercontent.com/65909160/150666910-e1000985-22fb-4413-9931-8aeae403c99a.png)
 
 - 7/28 Solved.AC 오류 (채점번호 : 31504838)
 - 7/29 Solved.AC 오류 (채점번호 : 31588234)
