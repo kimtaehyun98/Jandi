@@ -16,7 +16,7 @@
 
 ### GitHub
 
-![image](https://user-images.githubusercontent.com/65909160/155874172-1ecb80d0-d301-42b5-a080-b77269cbbbb5.png)
+![image](https://user-images.githubusercontent.com/65909160/156916970-71ecd6f2-f926-4098-a828-0c680ffd7d55.png)
 
 ### Solved.AC
 - Solved.AC 잔디 기능에 오류가 있음 (강제 갱신 등의 이유로 결과가 제대로 반영되지 않음)
@@ -27,7 +27,7 @@
 - 1/17 ~ 2/25 "삼성 DX 부문 22년 동계 대학생 S/W 알고리즘 역량강화 과정" 수강으로 인해 BOJ 문제는 쉬운 문제만 풀어서 잔디 채움 
 - 위에 언급한 기간에는 SW Expert 문제를 풀었으나 코드는 따로 올리지 않음 
 
-![image](https://user-images.githubusercontent.com/65909160/155874165-e69d7dbb-0b91-4954-aeb2-913ce5469307.png)
+![image](https://user-images.githubusercontent.com/65909160/156916955-411b1a87-e913-43aa-a819-798f315df87b.png)
 
 - 7/28 Solved.AC 오류 (채점번호 : 31504838)
 - 7/29 Solved.AC 오류 (채점번호 : 31588234)
