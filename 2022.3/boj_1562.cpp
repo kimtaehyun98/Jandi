@@ -4,7 +4,7 @@ using namespace std;
 #define MOD 1000000000
 typedef long long ll;
 
-ll dp[41][10][(1 << 10)];
+ll dp[101][10][(1 << 10)];
 
 int main() {
 	int n; ll ans = 0;
